@@ -1,38 +1,147 @@
 * {
-    font-family: Montserrat;
-    box-sizing: border-box;
-}
-
-h1 {
-    font-weight: 700;
-    font-size: 50px;
-    margin-top: auto;
-}
-
-a {
     text-decoration: none;
-    color: black;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat";
+    ;
+}
+
+
+.header {
+    width: 1100px;
+    margin: auto;
+    position: relative;
     font-size: 25px;
 }
 
-p {
-    color: #979797;
-    margin-top: auto;
-    font-size: 25px;
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    color: #000000;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    background: #FFFFFF;
+    z-index: 1;
+    border-bottom:1px solid #364f6b;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #00dfc0;
 }
 
 section {
-    padding: 64px 128px;
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
 }
 
-img {
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+h1 {
+    font-weight: 500;
+    font-size: 50px;
+    margin-top: auto;
+}
+h2 {
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #000000;
+    width: 100%;
+    line-height: 50px;
+}
+
+
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    color: #979797;
+    margin-top: auto;
+    font-size: 20px;
+}
+
+.tengah {
+    text-align: center;
     width: 100%;
 }
+
+.tutor-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#contact {
+    padding:100px 0px 50px 0px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #000000;
+    width: 100%;
+    line-height: 50px;
+}
+
 
 
 
 .btn {
-    background-color: aqua;
+    background-color: #00dfc0;
     color: white;
     padding: 8px 24px;
 }
@@ -45,46 +154,161 @@ img {
     border: 2px solid #00dfc0;
 }
 
-#header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 128px;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 5;
+h4 {
+    font-size: 45px;
+    color: white;
+    width: 1100px;
+    margin: auto;
+    position: relative;
 }
 
-header h1 {
-    margin: 0;
-    margin-top: auto;
+.kolomsatu{
+    display: grid;
+    float: left;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 20px;
+  }
+.kolomdua {
+    display: grid;
+    float: left;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 20px;
+}
+.kolomtiga {
+    display: grid;
+    text-align: center;
+    float: left;
+    justify-content: center;
+    margin: 5px;
+    padding: 20px;
 }
 
-nav > a {
-    margin-left: 12px;
-}
-
-nav > a:hover {
+table {
+    border: none;
+    position: relative;
+    justify-content: center;
+    background-color: #00dfc0;
     color: #00dfc0;
+    border: 2px solid #00dfc0;
+    width: 50px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#landing {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 16px;
-}
 
-#landing p {
-    margin-bottom: 32px;
-}
 
-#landing > div {
-    width: 50%;
-}
-
-.kolom {
+.btn3 {
+    background-color: #00dfc0;
+    color: white;
+    margin-left: auto;
+    padding: 8px 24px;
+    width: 170px;
+    height: 45px;
+    text-align: center;
+    border: 2px solid white;
+    float: left;
+    position: relative;
     margin-top: 50px;
-    margin-bottom: 50px;
+    font-size: 30px;
+    
+   
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background-color: #fff;
+    grid-template-columns: auto;
+    grid-template-rows: 175px 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 270px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-left: 38px;
+    border-radius: 0;
+    padding-bottom: 10px;
+    
+}
+
+.card img {
+    max-width: 270px;
+    object-fit: contain;
+    border-radius: 0;
+}
+.desk {
+    font-size: 15px;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding: 10px;
+
+}
+.judul {
+    padding-top: 10px;
+    font-size: 23px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+}
+
+.maps {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 900px;
+    margin: auto;
+    position: relative;
+    margin-left: 20px;
+ }
+    
+
+
+.box {
+    background-color: #00dfc0;
+    width: 100%;
+    height: 200px;
+}
+
+.kontak {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 900px;
+    margin: auto;
+    position: relative;
+    margin-left: 20px;
+    
+}
+
+.isi {
+    font-size: 35px;
+    color: #FFFFFF;
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.tell {
+    float: left;
+    margin-right: auto;
+    width: 500px;
+    margin: auto;
+    position: relative;
+
+}
+
+.logososmed {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row-reverse;
+    float: left;
+    margin-left: auto;
+    size: 55px;
 }
